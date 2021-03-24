@@ -6,6 +6,6 @@ public class AdvancedUHC extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        
+
     }
 }
