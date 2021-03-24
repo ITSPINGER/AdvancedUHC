@@ -77,6 +77,6 @@ public abstract class Scenario implements Comparable<Scenario>, Listener {
     }
 
     public boolean isEnabled() {
-        return enabled;
+        return this.enabled;
     }
 }
