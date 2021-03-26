@@ -8,7 +8,7 @@ import org.bukkit.event.Listener;
 
 import java.util.List;
 
-public abstract class Scenario implements Comparable<Scenario>, Listener {
+public abstract class Scenario implements Listener {
 
     /* The default instance of the plugin */
     private final AdvancedUHC advancedUHC;
@@ -61,11 +61,10 @@ public abstract class Scenario implements Comparable<Scenario>, Listener {
     public void setEnabled(boolean enabled) {
         // Check whether the game has started (ADD WHEN DONE)
         boolean started = false; // This is just a check so that we have an idea of how the enabling will work
-        this.enabled = enabled;
 
         // Missing a broadcasting message notifying of the scenario change
-
-        if (!started) {
+        if (!started || this.enabled == enabled) {
+            this.enabled = enabled;
             return;
         }
 
