@@ -1,3 +1,7 @@
 name: AdvancedUHC
 main: net.pinger.uhc.AdvancedUHC
 version: 1.0
+
+commands:
+  host:
+    usage: /<command>
